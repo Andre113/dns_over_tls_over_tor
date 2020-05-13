@@ -1,4 +1,4 @@
-FROM debian:lastes
+FROM debian:lastest
 
 MAINTAINER "PiSkyScan <piskyscan@piskyscan.com>"
 
