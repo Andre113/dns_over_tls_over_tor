@@ -199,21 +199,21 @@ upstream_recursive_servers:
 ####### IPv6 addresses ######
 ### Test servers ###
 # The Surfnet/Sinodun servers
-  - address_data: 2001:610:1:40ba:145:100:185:15
-    tls_auth_name: "dnsovertls.sinodun.com"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: 62lKu9HsDVbyiPenApnc4sfmSYTHOVfFgL3pyB+cBL4=
-  - address_data: 2001:610:1:40ba:145:100:185:16
-    tls_auth_name: "dnsovertls1.sinodun.com"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: cE2ecALeE5B+urJhDrJlVFmf38cJLAvqekONvjvpqUA=
-# The getdnsapi.net server
-#  - address_data: 2a04:b900:0:100::38
-#    tls_auth_name: "getdnsapi.net"
+#  - address_data: 2001:610:1:40ba:145:100:185:15
+#    tls_auth_name: "dnsovertls.sinodun.com"
 #    tls_pubkey_pinset:
 #      - digest: "sha256"
+#        value: 62lKu9HsDVbyiPenApnc4sfmSYTHOVfFgL3pyB+cBL4=
+#  - address_data: 2001:610:1:40ba:145:100:185:16
+#    tls_auth_name: "dnsovertls1.sinodun.com"
+#    tls_pubkey_pinset:
+#      - digest: "sha256"
+#        value: cE2ecALeE5B+urJhDrJlVFmf38cJLAvqekONvjvpqUA=
+# The getdnsapi.net server
+  - address_data: 2a04:b900:0:100::38
+    tls_auth_name: "getdnsapi.net"
+    tls_pubkey_pinset:
+      - digest: "sha256"
         value: foxZRnIh9gZpWnl+zEiKa0EJ2rdCGroMWm02gaxSc9Q=
 
 
@@ -228,10 +228,10 @@ upstream_recursive_servers:
 #  - address_data: 9.9.9.10
 #    tls_auth_name: "dns.quad9.net"
 ## Cloudflare 1.1.1.1 and 1.0.0.1
-#  - address_data: 1.1.1.1
-#    tls_auth_name: "cloudflare-dns.com"
-#  - address_data: 1.0.0.1
-#    tls_auth_name: "cloudflare-dns.com"
+  - address_data: 1.1.1.1
+    tls_auth_name: "cloudflare-dns.com"
+  - address_data: 1.0.0.1
+    tls_auth_name: "cloudflare-dns.com"
 ## The Uncensored DNS servers
 #  - address_data: 89.233.43.71
 #    tls_auth_name: "unicast.censurfridns.dk"
