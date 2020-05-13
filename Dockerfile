@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:lastes
 
 MAINTAINER "PiSkyScan <piskyscan@piskyscan.com>"
 
@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y apt-utils  && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/piskyscan/dns_over_tls_over_tor.git
+RUN git clone https://github.com/Andre113/dns_over_tls_over_tor.git
 
 WORKDIR dns_over_tls_over_tor
 COPY stubby.yml /etc/stubby/stubby.yml
