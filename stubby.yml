@@ -207,17 +207,7 @@ upstream_recursive_servers:
     tls_auth_name: "dns.google"
   - address_data: 8.8.4.4
     tls_auth_name: "dns.google"
-### Test servers ###
-## NIC Chile (self-signed cert)
-  - address_data: 200.1.123.46
-    tls_auth_name: "dnsotls.lab.nic.cl"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: sG6kj+XJToXwt1M6+9BeCz1SOj/1/mdZn56OZvCyZZc=
-
 # Tenta
   - address_data: 99.192.182.200
-    tls_auth_name: "iana.tenta.io"
-  - address_data: 66.244.159.200
     tls_auth_name: "iana.tenta.io"
     
