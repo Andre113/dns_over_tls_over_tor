@@ -208,55 +208,16 @@ upstream_recursive_servers:
   - address_data: 8.8.4.4
     tls_auth_name: "dns.google"
 ### Test servers ###
-## dns.larsdebruin.net (formerly dns1.darkmoon.is)
-  - address_data: 51.15.70.167
-    tls_auth_name: "dns.larsdebruin.net "
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: AAT+rHoKx5wQkWhxlfrIybFocBu3RBrPD2/ySwIwmvA=
-## dot.securedns.eu
-  - address_data: 146.185.167.43
-    tls_auth_name: "dot.securedns.eu"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: h3mufC43MEqRD6uE4lz6gAgULZ5/riqH/E+U+jE3H8g=
-## dns-tls.bitwiseshift.net
-  - address_data: 81.187.221.24
-    tls_auth_name: "dns-tls.bitwiseshift.net"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: YmcYWZU5dd2EoblZHNf1jTUPVS+uK3280YYCdz4l4wo=
-## ns1.dnsprivacy.at
-  - address_data: 94.130.110.185
-    tls_auth_name: "ns1.dnsprivacy.at"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: vqVQ9TcoR9RDY3TpO0MTXw1YQLjF44zdN3/4PkLwtEY=
-## ns2.dnsprivacy.at
-  - address_data: 94.130.110.178
-    tls_auth_name: "ns2.dnsprivacy.at"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: s5Em89o0kigwfBF1gcXWd8zlATSWVXsJ6ecZfmBDTKg=
-## dns.bitgeek.in
-  - address_data: 139.59.51.46
-    tls_auth_name: "dns.bitgeek.in"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: FndaG4ezEBQs4k0Ya3xt3z4BjFEyQHd7B75nRyP1nTs=
-## Lorraine Data Network  (self-signed cert).
-  - address_data: 80.67.188.188
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: WaG0kHUS5N/ny0labz85HZg+v+f0b/UQ73IZjFep0nM=
-## dns.neutopia.org
-  - address_data: 89.234.186.112
-    tls_auth_name: "dns.neutopia.org"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: wTeXHM8aczvhRSi0cv2qOXkXInoDU+2C+M8MpRyT3OI=
 ## NIC Chile (self-signed cert)
   - address_data: 200.1.123.46
+    tls_auth_name: "dnsotls.lab.nic.cl"
     tls_pubkey_pinset:
       - digest: "sha256"
         value: sG6kj+XJToXwt1M6+9BeCz1SOj/1/mdZn56OZvCyZZc=
+
+# Tenta
+  - address_data: 99.192.182.200
+    tls_auth_name: "iana.tenta.io"
+  - address_data: 66.244.159.200
+    tls_auth_name: "iana.tenta.io"
+    
