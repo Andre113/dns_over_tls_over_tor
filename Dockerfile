@@ -14,8 +14,8 @@ COPY stubby.yml /etc/stubby/stubby.yml
 COPY proxychains.conf /etc/proxychains.conf
 COPY run_stubby.sh /var/run/
 
-RUN chmod +x /var/run/run_stubby.sh
 RUN systemctl stop tor
+RUN chmod +x /var/run/run_stubby.sh
 
 EXPOSE 8053
 EXPOSE 9050
