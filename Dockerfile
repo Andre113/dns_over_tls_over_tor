@@ -3,7 +3,7 @@ FROM debian:buster
 MAINTAINER "PiSkyScan <piskyscan@piskyscan.com>"
 
 RUN apt-get update && apt-get install -y apt-utils  && \
-        apt-get install -y  libyaml-dev libssl-dev git stubby proxychains procps tor net-tools && \
+        apt-get install -y  libyaml-dev libssl-dev git stubby proxychains procps tor net-tools lsof && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/*
 
