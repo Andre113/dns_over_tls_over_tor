@@ -3,7 +3,7 @@ FROM debian:buster
 MAINTAINER "PiSkyScan <piskyscan@piskyscan.com>"
 
 RUN apt-get update && apt-get install -y apt-utils  && \
-        apt-get install -y  libyaml-dev libssl-dev git stubby proxychains procps tor net-tools && \
+        apt-get install -y  libyaml-dev libssl-dev git stubby proxychains procps tor net-tools systemd && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/*
 
@@ -15,6 +15,7 @@ COPY proxychains.conf /etc/proxychains.conf
 COPY run_stubby.sh /var/run/
 
 RUN chmod +x /var/run/run_stubby.sh
+RUN systemctl stop tor
 
 EXPOSE 8053
 EXPOSE 9050
