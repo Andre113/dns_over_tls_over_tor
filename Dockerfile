@@ -14,7 +14,7 @@ COPY stubby.yml /etc/stubby/stubby.yml
 COPY proxychains.conf /etc/proxychains.conf
 COPY run_stubby.sh /var/run/
 
-kill -9 $(lsof -t -i:9050 -sTCP:LISTEN)
+RUN kill -9 $(lsof -t -i:9050 -sTCP:LISTEN)
 RUN chmod +x /var/run/run_stubby.sh
 
 EXPOSE 8053
