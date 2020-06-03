@@ -12,9 +12,10 @@ RUN git clone https://github.com/Andre113/dns_over_tls_over_tor.git
 WORKDIR dns_over_tls_over_tor
 COPY stubby.yml /etc/stubby/stubby.yml
 COPY proxychains.conf /etc/proxychains.conf
+COPY stop_services.sh /var/run/
 COPY run_stubby.sh /var/run/
 
-RUN chmod +x stop_services.sh
+RUN chmod +x /var/run/stop_services.sh
 RUN chmod +x /var/run/run_stubby.sh
 
 EXPOSE 8053
